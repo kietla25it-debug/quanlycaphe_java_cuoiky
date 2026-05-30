@@ -160,7 +160,7 @@ public class FileStore implements DataStore {
 
     private void ensureManagerAccount(AppData data) {
         String hiddenUsername = "quanly";
-        String hiddenPassword = "KNLuxury@2026";
+        String hiddenPassword = "Kiet123";
         User manager = data.getUsers().stream().filter(u -> u.getRole() == Role.ADMIN).findFirst().orElse(null);
         if (manager == null) {
             data.getUsers().add(new User(data.nextUserId(), "QUẢN LÝ KIỆT NAM CAFÉ LUXURY", hiddenUsername, hiddenPassword, Role.ADMIN, true));
